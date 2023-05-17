@@ -70,7 +70,7 @@ function(target_architecture output_var)
       elseif("${osx_arch}" STREQUAL "arm64")
         set(osx_arch_arm64 TRUE)
       else()
-        message(FATAL_ERROR "Invalid OS X arch name: ${osx_arch}")
+        #message(FATAL_ERROR "Invalid OS X arch name: ${osx_arch}")
       endif()
     endforeach()
 
