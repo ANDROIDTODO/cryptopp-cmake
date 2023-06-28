@@ -130,7 +130,7 @@ cryptopp_deprecated_option(DISABLE_POWER9 CRYPTOPP_DISABLE_POWER9 "Disable POWER
 
 option(CRYPTOPP_USE_MASTER_BRANCH
        "Get crypto++ from the master branch, not from a release tag" FALSE)
-option(CRYPTOPP_BUILD_TESTING "Build library tests" ON)
+option(CRYPTOPP_BUILD_TESTING "Build library tests" OFF)
 option(CRYPTOPP_BUILD_DOCUMENTATION
        "Use Doxygen to create the HTML-based API documentation" OFF)
 
@@ -138,7 +138,7 @@ option(CRYPTOPP_BUILD_DOCUMENTATION
 # install/no-install behavior for cryptopp module. This is particularly useful
 # when `cryptopp` is used as a sub-project with CMake and the user publicly
 # depends on it and wants to have a self-contained install.
-option(CRYPTOPP_INSTALL "Generate the install target for this project." ON)
+option(CRYPTOPP_INSTALL "Generate the install target for this project." OFF)
 
 # Crypto++ DOES NOT properly support DLL builds. The old DLL was the FIPS one,
 # which is being abandoned. Therefore, we only allow static builds until that
